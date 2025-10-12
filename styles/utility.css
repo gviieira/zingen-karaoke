@@ -1,0 +1,47 @@
+.py-base {
+  padding-block: var(--py-base); /* Padding eixo Y, Em cima e Em baixo */
+}
+
+.py-lg {
+  padding-block: var(--py-lg);
+}
+
+.py-xl {
+  padding-block: var(--py-xl);
+}
+
+.px-lg {
+  padding-inline: var(--px-lg);
+}
+
+.container {
+  --max-width: 375px; 
+  width: min(var(--max-width), 100% - var(--px-lg) * 2); /* Funcao min = Pegar o minimo entre 2 valores */
+  margin-inline: auto; /* Centraliza o container no eixo X */
+  border: solid violet;
+}
+
+.desktop-only { /* Fazer Primeiro para o MOBILE, depois para o DESKTOP */
+  display: none;
+}
+
+.even-columns { /* Colunas Constantes */
+  display: grid;
+  gap: 1rem;
+}
+
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+
+  .even-columns { /* UM EM BAIXO DO OUTRO NO MOBILE, E COLUNAS NO DESKTOP */
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
