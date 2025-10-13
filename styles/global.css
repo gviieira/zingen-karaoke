@@ -95,6 +95,11 @@ ul[role='list'] {
   list-style: none;
 }
 
+img {
+    max-width: 100%;
+    display: inline-block;
+  }
+
 @media (width >= 80em /* Quando a largura for maior ou igual a 80 * 16 = 1280px, Entao vai mudar... */) { 
   :root {
     --fs-lg: 2rem;
