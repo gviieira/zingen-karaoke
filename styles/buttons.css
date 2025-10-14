@@ -54,7 +54,7 @@
     content: '';
     position: absolute;
     border-radius: inherit;
-    inset: 0.09375rem; /* o quanto do botao vai ter a cor do background 0.09375 = 1px, logo somente 1px nao vai ter a cor do background */
+    inset: 1px; /* o quanto do botao vai ter a cor do background 0.09375rem = 1px, logo somente 1px nao vai ter a cor do background */
     background-color: var(--bg-color);
   }
 
