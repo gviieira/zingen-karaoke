@@ -55,7 +55,8 @@ html {
 
 body {
   background-color: var(--bg-color);
-}
+  overflow-x: hidden; /* Tirar o scroll na horizontal nos mobiles */
+} 
 
 h1,
 h2,
